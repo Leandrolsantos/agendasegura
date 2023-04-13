@@ -59,7 +59,7 @@ button::before {
   
   button:hover {
     cursor: pointer;
-    color: #161616;
+    color: #171616;
     transform: scale(1.1);
   }
   
@@ -167,7 +167,7 @@ button::before {
     legend {
         font-size: 1.5rem;
         max-width: 150px;
-        min-height: 10px;
+        min-height: 15px;
     }
     
     #anota {
