@@ -28,4 +28,4 @@ Consegui concluir a primeira versão desta ferramenta, fiquei contente com o res
 
 - HTML
 - CSS
-- ?
+- Javascript
