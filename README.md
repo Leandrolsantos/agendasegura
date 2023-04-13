@@ -1,10 +1,12 @@
-# Agenda Segura - Bloco de Notas
+# Anota-Ki - Agenda Segura
 
-![](./)
+![](./assets/img/home.png)
 
-![](./)
+![](./assets/img/agenda.png)
 
-Deploy: (EM BREVE)
+![](./assets/img/anotag.gif)
+
+Deploy: (https://agendasegura.vercel.app/home.html)
 
 ## Sobre
 
