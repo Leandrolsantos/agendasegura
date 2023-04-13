@@ -109,6 +109,7 @@ button::before {
     font-size: 16px;
     background: url(/assets/img/fundo.jpg) no-repeat;
     background-size: cover;
+    box-shadow: 2px 2px 4px black;
 }
 
 @media (min-width: 320px) and (max-width: 900px) {
@@ -127,7 +128,19 @@ button::before {
     }
 
     #navega {
-        
+        max-width: 250px;
+    }
+
+    button {
+        font-size: 0.8rem;
+    }
+
+    .button-style {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100px;
+        height: 100px;
     }
     
     #bloco-notas {
@@ -141,12 +154,20 @@ button::before {
     }
 
     #agenda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         margin: 0 auto;
         border-radius: 10px;
+        max-width: 150px;
+        min-height: 10px;
     }
     
     legend {
         font-size: 1.5rem;
+        max-width: 150px;
+        min-height: 10px;
     }
     
     #anota {
@@ -155,7 +176,9 @@ button::before {
         resize: none;
         margin: 0 auto;
         padding: 0 auto;
-        width: 100%;
+        max-width: 260px;
+        max-height: 400px;
+        box-shadow: 2px 2px 4px black;
     }
     
 }

@@ -1,13 +1,18 @@
-var password = document.getElementById("password")
-  , confirm_password = document.getElementById("confirm_password");
-
-function validatePassword(){
-  if(password.value != confirm_password.value) {
-    confirm_password.setCustomValidity("Senhas diferentes!");
-  } else {
-    confirm_password.setCustomValidity('');
+function typeWriter(elemento) {
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    textoArray.forEach((letra, i) => {
+      setTimeout(() => elemento.innerHTML += letra, 150 * i);
+    });
   }
-}
 
-password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
+  const titulo = document.querySelector('h2');
+  typeWriter(titulo);
+
+  //*fade in imagem olhos*//
+
+  document.addEventListener('DOMContentLoaded', function(){
+    document.querySelector('body')
+            .classList
+            .add('loaded');
+  });
