@@ -1,30 +1,29 @@
 
 * {
-    max-width: 100rem;
-    padding: 10px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     background: lightblue;
-    min-height: 80vh;
-    width: 95vw;
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     background: url(https://source.unsplash.com/800x500/?programing) no-repeat;
     background-size: cover;
 }
 
-.navega {
+#navega {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.button {
+button {
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -36,7 +35,8 @@ body {
     color: rgb(0, 217, 255);
     padding: 0.5em 1em;
     outline: none;
-    border: none;
+    border: groove 2px black;
+    box-shadow: 2px 2px 4px black;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
     transition: color 0.4s ease-in-out;
@@ -54,59 +54,64 @@ button::before {
     background-color: #03eaff;
     transform-origin: center;
     transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
-    transition: transform 0.45s ease-in-out;
+    transition: transform 0.55s ease-in-out;
   }
   
   button:hover {
     cursor: pointer;
     color: #161616;
+    transform: scale(1.1);
   }
   
   button:hover::before {
     transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
   }
 
-.link-visited:visited {
+  #button-style {
+    margin: 10px;
+    color: black;
+  }
+
+#link-visited:visited {
     text-decoration: none;
 }
 
-.link-visited:link {
+#link-visited:link {
     text-decoration: none;
 }
 
-.bloco-notas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 100vw;
-    min-height: 10vh;
-    overflow: hidden;
-    border-radius: 10px;
+#bloco-notas {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: aliceblue;
+   font-size: 2.3rem;
+   padding:  0.1rem;
+   margin: 10px;
+   -webkit-text-stroke-width: 0.1rem;
+   -webkit-text-stroke-color: black;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.871);
 }
 
-.agenda {
+#agenda {
     margin: 0 auto;
     padding: 0 auto;
     border-radius: 10px;    
 }
 
-legend {
-    font-size: 2rem;
-}
-
-.anota {
-    border: 4px groove black;
+#anota {
+    border: 4px groove rgb(255, 255, 255);
     border-radius: 10px;
     resize: none;
-    margin: 15px 5px;
-    padding: 0 auto;
+    margin: 15px;
+    padding: 15px;
+    font-size: 16px;
     background: url(/assets/img/fundo.jpg) no-repeat;
     background-size: cover;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
+@media (min-width: 320px) and (max-width: 900px) {
     
     body {
         display: flex;
@@ -115,21 +120,17 @@ legend {
         justify-content: center;
         margin: 0px auto;
         padding: 0px auto;
-        margin-left: -30px;
-        width: 100vw;
+        width: 100%;
         background: url(https://source.unsplash.com/1378x800/?programing) no-repeat;
         background-size: cover;
         background-position: center;
     }
 
-    .navega {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    #navega {
+        
     }
     
-    .bloco-notas {
+    #bloco-notas {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -139,7 +140,7 @@ legend {
         padding: 0 auto;
     }
 
-    .agenda {
+    #agenda {
         margin: 0 auto;
         border-radius: 10px;
     }
@@ -148,12 +149,13 @@ legend {
         font-size: 1.5rem;
     }
     
-    .anota {
+    #anota {
         border: 4px groove black;
         border-radius: 10px;
         resize: none;
         margin: 0 auto;
         padding: 0 auto;
+        width: 100%;
     }
     
 }
