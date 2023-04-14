@@ -35,7 +35,7 @@ button {
     color: rgb(0, 217, 255);
     padding: 0.5em 1em;
     outline: none;
-    border: groove 2px black;
+    border: groove 2px rgb(10, 10, 10);
     box-shadow: 2px 2px 4px black;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
@@ -54,7 +54,7 @@ button::before {
     background-color: #03eaff;
     transform-origin: center;
     transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
-    transition: transform 0.55s ease-in-out;
+    transition: transform 0.36s ease-in-out;
   }
   
   button:hover {
@@ -85,12 +85,12 @@ button::before {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   color: aliceblue;
+   color: rgb(219, 230, 239);
    font-size: 2.3rem;
    padding:  0.1rem;
    margin: 10px;
    -webkit-text-stroke-width: 0.1rem;
-   -webkit-text-stroke-color: black;
+   -webkit-text-stroke-color: rgba(0, 0, 0, 0.94);
    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.871);
 }
 
@@ -178,7 +178,7 @@ button::before {
         padding: 0 auto;
         max-width: 260px;
         max-height: 400px;
-        box-shadow: 2px 2px 4px black;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.914);
     }
     
 }
